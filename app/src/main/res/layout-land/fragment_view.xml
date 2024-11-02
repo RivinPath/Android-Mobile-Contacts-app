@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_view">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:id="@+id/displayContactImage"
+        android:layout_width="225dp"
+        android:layout_height="225dp"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/displayContactEmail"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/displayContactEmail"
+        android:layout_width="282dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="56dp"
+        android:gravity="center_vertical"
+        android:text="@string/contact_email"
+        android:textColor="@color/contact_orange"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/backButton"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/displayContactNumber"
+        android:layout_width="282dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_vertical"
+        android:text="@string/contact_number"
+        android:textColor="@color/contact_orange"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/displayContactEmail"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/displayContactName"
+        android:layout_width="282dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="24dp"
+        android:gravity="center_vertical"
+        android:text="@string/contact_name"
+        android:textColor="@color/contact_orange"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/displayContactNumber"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="@color/contact_orange"
+        android:text="@string/edit_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="@color/contact_orange"
+        android:text="@string/back_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editButton" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="359dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="379dp"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
